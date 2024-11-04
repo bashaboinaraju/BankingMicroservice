@@ -1,0 +1,6 @@
+cd /var/lib/jenkins/workspace/maven-project
+sudo docker build . -t bashaboinaraju/prodimg:$BUILD_NUMBER
+sudo docker push bashaboinaraju/prodimg:$BUILD_NUMBER
+sudo chmod 777 docker.sh
+sudo bash docker.sh
+sudo docker container run -it --name prodcontainer -d bashaboinaraju/prodimg:$BUILD_NUMBER
