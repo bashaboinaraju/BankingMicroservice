@@ -5,6 +5,6 @@ package com.raju;
  */
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello raju1!");
+        System.out.println("Hello amma!");
     }
 }
